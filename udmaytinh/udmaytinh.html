@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <td colspan="2"><input id="so1" type="text"/></td>
+        <td colspan="2"><input id="so2" type="text"/> </td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="cong()"/>Addition(+)</td>
+        <td><button type="button" onclick="tru()"/>Subtraction(-)</td>
+        <td><button type="button" onclick="nhan()"/>Multiplucation(X)</td>
+        <td><button type="button" onclick="chia()"/>Division(/)</td>
+    </tr>
+</table>
+    <tr>
+        <p>Kết quả</p>
+        <span id="ketqua"></span>
+    </tr>
+</body>
+<script>
+    function cong(){
+        let so1= parseFloat(document.getElementById('so1').value);
+        let so2= parseFloat(document.getElementById('so2').value);
+        document.getElementById('ketqua').innerText = so1 + so2;
+    }
+    function tru(){
+        let so1= parseFloat(document.getElementById('so1').value);
+        let so2= parseFloat(document.getElementById('so2').value);
+        document.getElementById('ketqua').innerText = so1 - so2;
+    }
+    function nhan(){
+        let so1= parseFloat(document.getElementById('so1').value);
+        let so2= parseFloat(document.getElementById('so2').value);
+        document.getElementById('ketqua').innerText = so1*so2;
+    }
+    function chia(){
+        let so1= parseFloat(document.getElementById('so1').value);
+        let so2= parseFloat(document.getElementById('so2').value);
+        document.getElementById('ketqua').innerText = so1/so2;
+    }
+
+</script>
+</html>
